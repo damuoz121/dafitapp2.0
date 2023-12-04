@@ -1,0 +1,39 @@
+<%- include('../partials/headdashboard'); %>
+<body>
+    <main>
+      <div class="h-screen bg-slate-50 flex justify-center items-center w-full" id="contenedorregistroejercicio">
+          <form action="registroejercicio" method="post">
+            <div class="bg-white px-10 py-8 rounded-xl w-screen shadow-md max-w-sm">
+              <img class="h-14 mb-4 mx-auto" src="/static/dafit-logo.png" alt="logo">
+              <div class="space-y-4">
+                <h1 class="text-center text-2xl font-semibold text-gray-600">Registro de plan</h1>
+                <div>
+                  <label for="nombre" class="form-label block mb-1 text-gray-600 font-semibold">Nombre del plan</label>
+                  <input type="text" class="bg-indigo-50 px-4 py-2 outline-none rounded-md w-full" id="nombreEjercicio" name="nombre" />
+                </div>
+                <div>
+                  <label for="dificultad" class="form-label block mb-1 text-gray-600 font-semibold">Dificultad</label>
+                  <input type="text" class="bg-indigo-50 px-4 py-2 outline-none rounded-md w-full" id="dificultad" name="dificultad" />
+                </div>
+                <div>
+                  <label for="objetivo" class="form-label block mb-1 text-gray-600 font-semibold">Objetivo</label>
+                  <input type="text" class="bg-indigo-50 px-4 py-2 outline-none rounded-md w-full" id="objetivo" name="objetivo" />
+                </div>
+                <div>
+                  <label for="ejercicios" class="block mb-1 text-gray-600 font-semibold">Ejercicios</label>
+                  <select class="bg-indigo-50 px-4 py-2 outline-none rounded-md w-full" id="ejercicios" name="ejercicios">
+                    <option value=""></option>
+                  </select>
+                </div>
+  
+  
+              </div>
+              <button type="submit" class="mt-4 w-full bg-blue-600 text-white font-semibold py-2 rounded-md  tracking-wide">Registrar ejercicio</button>
+            </div>
+          </form>
+        </div>
+    </main>
+    <%- include('../partials/footer'); %>
+  </body>
+  
+  </html>
